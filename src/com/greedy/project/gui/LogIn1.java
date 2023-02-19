@@ -1,5 +1,6 @@
 package com.greedy.project.gui;
 
+import java.awt.TextField;
 import java.io.File;
 import java.io.IOException;
 
@@ -50,16 +51,27 @@ public class LogIn1 extends JFrame{
 			
 			/* 회원가입 버튼 */
 			JButton b3 = new JButton(new ImageIcon("images/button/login_registbt.PNG"));
-			b3
-			.setBounds(500, 450, 200, 55);
+			b3.setBounds(500, 450, 200, 55);
+			
+			/* 아이디 입력 */
+			TextField idtext = new TextField();
+			idtext.setBounds(230, 190, 450, 45);
+			
+			/* 비밀번호 입력 */
+			TextField pwdtext = new TextField();
+			pwdtext.setBounds(230, 305, 450, 45);
+			
 			
 			/* 패널에 컴포넌트 추가 */
+		    panel.add(idtext);		//아이디 텍스트
+		    panel.add(pwdtext);		//비밀번호 텍스트
 			panel.add(logo2);		//짱구의 하루 라벨
 		    panel.add(logo);		//배경화면
 		    panel.add(background);	//배경화면
 		    panel.add(b1);			//나가기
 		    panel.add(b2);			//확인
 		    panel.add(b3);			//회원가입
+
 
 		    /* 패널을 프레임에 추가 */
 		    this.getContentPane().add(panel);
