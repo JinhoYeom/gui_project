@@ -1,4 +1,4 @@
-package com.greedy.project.gui;
+package com.greedy.project.gui.start;
 
 import java.io.File;
 import java.io.IOException;

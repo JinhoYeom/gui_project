@@ -1,4 +1,4 @@
-package com.greedy.project.gui;
+package com.greedy.project.gui.login;
 
 import java.awt.TextField;
 import java.io.File;
